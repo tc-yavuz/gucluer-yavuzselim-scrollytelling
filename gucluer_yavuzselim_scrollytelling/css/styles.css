@@ -21,9 +21,50 @@
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
+section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px;
+  border: red 1px solid;
+}
+
+img {
+  border: 1px solid rgba(218, 0, 0, 0.5);
+}
+
+ul.technique-gsap{
+  background: rgba(0,0,0,0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 10px 20px 12px 20px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+ul.technique-gsap li{
+  margin: 5px 0;
+}
+
+/*------------------------------------------------------------------
+Header
+--------------------------------------------------------------------*/
 .titre {
   position: absolute;
   top: 10px;
@@ -33,6 +74,7 @@ body {
   font-family: "varela";
   color: var(--bleu_eau);
   text-align: center;
+  z-index: 2;
 }
 
 .para {
@@ -46,6 +88,16 @@ body {
   font-family: "varela";
   color: var(--bleu_eau);
   text-align: center;
+  z-index: 2;
+}
+
+/*--------------------------------------------------------- 
+# Paragraphe de chapitre
+---------------------------------------------------------*/
+#text {
+  position: absolute;
+  font-family: 'montserrat';
+  font-size: 2vw;
 }
 
 /* Defilement */
@@ -157,16 +209,6 @@ body {
     }
   }
 
-section {
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0px;
-    border: red 1px solid;
-}
-
 /*---------------------------------------------------------- 
 # Chapitre 1
 ----------------------------------------------------------*/ 
@@ -178,6 +220,18 @@ section {
 ----------------------------------------------------------*/ 
 #chapitre-2 {
     background-image: url("../img/img_arriere_plan/parallax/fond_montagnes.png");
+}
+
+#mont-gauche {
+  position: absolute;
+}
+
+#mont-droit {
+  display: none;
+}
+
+#arbres {
+  display: none;
 }
 /*---------------------------------------------------------- 
 # Chapitre 3
