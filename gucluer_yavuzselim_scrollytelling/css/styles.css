@@ -244,9 +244,9 @@ Header
 
 #arbres {
   position: absolute;
-  width: 110vw;
-  height: 80vh;
-  right: -3vw;
+  width: 120vw;
+  height: 90vh;
+  right: -5vw;
   top: 40vh;
   z-index: 3;
 }
@@ -303,7 +303,8 @@ Header
 
 .seahorse {
   position: absolute;
-  display: none;
+  z-index: 5;
+  visibility: hidden;
 }
 /*---------------------------------------------------------- 
 # Chapitre 7

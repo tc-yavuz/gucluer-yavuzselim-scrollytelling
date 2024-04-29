@@ -20,7 +20,7 @@ const oiseau = gsap.timeline({
     start: "top center",
     end: "bottom top",
     scrub: 1,
-    markers: false,
+    markers: '#chapitre-2',
   },
 });
 oiseau
@@ -54,22 +54,15 @@ gsap.to('#tortue', {
 
 gsap.registerPlugin(MorphSVGPlugin);
 
-gsap.to("#poisson", {
-  duration: 3, 
-  morphSVG:{
-    shape:"#seahorse", 
-    shapeIndex:5
-  }
+let anim = gsap.to("#poisson", { 
+  morphSVG: "#seahorse"
 });
 
-gsap.to("#parallax", {
-  backgroundSize: "400%",
-  ease: "none",
-  scrollTrigger: {
-      trigger: "#chapitre-2",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: 0.5,
-      markers: true
-  }
-});
+
+
+
+gsap.timeline({scrollTrigger:
+  {trigger:'.parallax', start:'top top', end:'bottom bottom', scrub:1}})
+    .To('#mont-gauche', {x:0},{y:-200}, 0)
+    .To('#mont-droit', {x:100},{y:-800}, 0)
+    .To('#arbres', {x:-150},{y:-500}, 0)
