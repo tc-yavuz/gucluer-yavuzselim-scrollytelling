@@ -98,6 +98,8 @@ Header
   position: absolute;
   font-family: 'montserrat';
   font-size: 2vw;
+  right: 5vw;
+  top: 10vh;
 }
 
 /* Defilement */
@@ -224,20 +226,36 @@ Header
 
 #mont-gauche {
   position: absolute;
+  width: 60vw;
+  height: 60vh;
+  bottom: 0vh;
+  left: -5vw;
+  z-index: 3;
 }
 
 #mont-droit {
-  display: none;
+  position: absolute;
+  width: 60vw;
+  height: 60vh;
+  bottom: 0vh;
+  right: -1vw;
+  z-index: 2;
 }
 
 #arbres {
-  display: none;
+  position: absolute;
+  width: 110vw;
+  height: 80vh;
+  right: -3vw;
+  top: 40vh;
+  z-index: 3;
 }
 /*---------------------------------------------------------- 
 # Chapitre 3
 ----------------------------------------------------------*/ 
 #chapitre-3 {
-    background-image:url("../img/img_arriere_plan/surface_hd.png") ;
+    background-image:url("../img/img_arriere_plan/surface_hd.png");
+    z-index: 3;
 }
 /*---------------------------------------------------------- 
 # Chapitre 4
