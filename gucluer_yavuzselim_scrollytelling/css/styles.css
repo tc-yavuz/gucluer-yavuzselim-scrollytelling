@@ -125,7 +125,7 @@ Header
     position: absolute;
     text-align: center;
     width: 54.1875px;
-    z-index: 0;
+    z-index: 3;
     align-self: stretch;
     perspective-origin: 27.0938px 30px;
     transform: matrix(1, 0, 0, 1, -27, 0);
@@ -254,14 +254,33 @@ Header
 # Chapitre 3
 ----------------------------------------------------------*/ 
 #chapitre-3 {
+  position: relative;
     background-image:url("../img/img_arriere_plan/surface_hd.png");
     z-index: 3;
+}
+
+.sprite2 {
+  position: absolute;
+  top: 10vh;
+  right: 160vh;
+  background-image: url(../img/img_personnages/bird_ss.png);
+  height: 500px;
+  width: 500px;
+  animation: bird 2s infinite steps(48) paused;
 }
 /*---------------------------------------------------------- 
 # Chapitre 4
 ----------------------------------------------------------*/ 
 #chapitre-4 {
     background-image: url("../img/img_arriere_plan/plan-eau-1.png");
+}
+
+#chapitre-4 img {
+  position: absolute;
+  width: 10vw;
+  height: 15vh;
+  z-index: 4;
+  border: 1px solid rgba(218, 0, 0, 0.5);
 }
 /*---------------------------------------------------------- 
 # Chapitre 5
@@ -273,13 +292,33 @@ Header
 # Chapitre 6
 ----------------------------------------------------------*/ 
 #chapitre-6 {
+  position: relative;
   background-image: url("../img/img_arriere_plan/plan-eau-3.png");
+}
+
+.poisson {
+  position: absolute;
+  z-index: 5;
+}
+
+.seahorse {
+  position: absolute;
+  display: none;
 }
 /*---------------------------------------------------------- 
 # Chapitre 7
 ----------------------------------------------------------*/ 
 #chapitre-7 {
   background-image: url("../img/img_arriere_plan/plan-eau-4.png");
+}
+
+.sprite {
+  position: absolute;
+  background-image: url(../img/img_personnages/diver_ss.png);
+  height: 502px;
+  width: 502px;
+  animation: diver 2s infinite steps(48) paused;
+  z-index: 3;
 }
 /*---------------------------------------------------------- 
 # Chapitre 8
@@ -292,29 +331,6 @@ Header
 
 .spritesheet, .spritesheet2 {
     height: 200vh;
-}
-
-.sprite {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url(../img/img_personnages/diver_ss.png);
-    height: 502px;
-    width: 502px;
-    animation: diver 1s infinite steps(48) paused;
-  
-}
-
-.sprite2 {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url(../img/img_personnages/bird_ss.png);
-    height: 500px;
-    width: 500px;
-    animation: bird 1s infinite steps(48) paused;
 }
 
 @keyframes diver {
