@@ -1,0 +1,373 @@
+/*--------------------------------------------------------- 
+# Styles Généraux 
+---------------------------------------------------------*/
+:root {
+  --bleu_fonce: #001f3f;
+  --bleu_ciel: #00b4d8;
+  --vert: #2ecc71;
+  --mauve: #6c5ce7;
+  --bleu_eau: #7fdbff;
+  --bleu_sombre: #004d99;
+}
+  
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserra/Montserrat-VariableFont_wght.ttf);
+}
+  
+@font-face {
+  font-family: "varela";
+  src: url(../fonts/VerelaRound/VarelaRound-Regular.ttf);
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px;
+  border: red 1px solid;
+}
+
+img {
+  border: 1px solid rgba(218, 0, 0, 0.5);
+}
+
+ul.technique-gsap{
+  background: rgba(0,0,0,0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 10px 20px 12px 20px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+ul.technique-gsap li{
+  margin: 5px 0;
+}
+
+/*------------------------------------------------------------------
+Header
+--------------------------------------------------------------------*/
+.titre {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4vw;
+  font-family: "varela";
+  color: var(--bleu_eau);
+  text-align: center;
+  z-index: 2;
+}
+
+.para {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40vw;
+  background-color: #001f3f;
+  padding:1.5vh 1.5vw ;
+  font-size: 11px;
+  font-family: "varela";
+  color: var(--bleu_eau);
+  text-align: center;
+  z-index: 2;
+}
+
+/*--------------------------------------------------------- 
+# Paragraphe de chapitre
+---------------------------------------------------------*/
+#text {
+  position: absolute;
+  font-family: 'montserrat';
+  font-size: 2vw;
+  right: 5vw;
+  top: 10vh;
+}
+
+/* Defilement */
+
+@keyframes scrollIcon {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+    }
+    100% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px)
+    }
+  }
+  
+  .home-scroll-cta {
+    bottom: 50px;
+    box-sizing: border-box;
+    color: black;
+    height: 60px;
+    left: 50%;
+    letter-spacing: 3px;
+    position: absolute;
+    text-align: center;
+    width: 54.1875px;
+    z-index: 3;
+    align-self: stretch;
+    perspective-origin: 27.0938px 30px;
+    transform: matrix(1, 0, 0, 1, -27, 0);
+    transform-origin: 27.0938px 30px;
+    border: 0px none black;
+    font: normal normal normal normal 11px / 11px brandon-grotesque, sans-serif;
+    margin: 30px 0px 0px;
+    outline: black none 0px;
+  
+    .scroll-animated {
+      box-sizing: border-box;
+      color: black;
+      height: 38px;
+      letter-spacing: 3px;
+      text-align: center;
+      width: 24px;
+      perspective-origin: 12px 19px;
+      transform-origin: 12px 19px;
+      border: 2px solid black;
+      border-radius: 12px 12px 12px 12px;
+      font: normal normal normal normal 11px / 11px brandon-grotesque, sans-serif;
+      margin: 0px 15.0938px 6px;
+      outline: black none 0px;
+  
+      .scroll-animated-inner {
+        box-sizing: border-box;
+        color: black;
+        display: block;
+        height: 5px;
+        letter-spacing: 3px;
+        text-align: center;
+        width: 2px;
+        z-index: 0;
+        perspective-origin: 1px 2.5px;
+        transform: matrix(1, 0, 0, 1, 0, 3.67524);
+        transform-origin: 1px 2.5px;
+        animation: scrollIcon 1s ease 0s infinite alternate none running;
+        background: black none repeat scroll 0% 0% / auto padding-box border-box;
+        border: 0px none black;
+        border-radius: 50% 50% 50% 50%;
+        font: normal normal normal normal 11px / 11px brandon-grotesque, sans-serif;
+        margin: 8px 9px;
+        outline: black none 0px;
+      }
+    }
+    
+    .shape-scroll-touch .small-only {
+      box-sizing: border-box;
+      color: black;
+      display: none;
+      height: 38px;
+      letter-spacing: 3px;
+      text-align: center;
+      width: 38px;
+      perspective-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      border: 0px none black;
+      font: normal normal normal normal 11px / 11px brandon-grotesque, sans-serif;
+      margin: 0px 0px 6px;
+      outline: black none 0px;
+      overflow: hidden;
+    }
+  
+    p {
+      box-sizing: border-box;
+      color: black;
+      height: 24px;
+      letter-spacing: 3px;
+      text-align: center;
+      width: 54.1875px;
+      perspective-origin: 27.0938px 12px;
+      transform-origin: 27.0938px 12px;
+      border: 0px none black;
+      font: normal normal 600 normal 16px / 24px brandon-grotesque, sans-serif;
+      margin: 0px 0px 16px;
+      outline: black none 0px;
+    }
+  }
+  
+  @media screen and (min-width: 768px){
+    .small-only {
+      display: none!important;
+    }
+  }
+
+/*---------------------------------------------------------- 
+# Chapitre 1
+----------------------------------------------------------*/ 
+#chapitre-1 {
+    background-image: url("../img/img_arriere_plan/galaxy.png");
+}
+/*---------------------------------------------------------- 
+# Chapitre 2
+----------------------------------------------------------*/ 
+#chapitre-2 {
+    background-image: url("../img/img_arriere_plan/parallax/fond_montagnes.png");
+}
+
+#mont-gauche {
+  position: absolute;
+  width: 60vw;
+  height: 60vh;
+  bottom: 0vh;
+  left: -5vw;
+  z-index: 3;
+}
+
+#mont-droit {
+  position: absolute;
+  width: 60vw;
+  height: 60vh;
+  bottom: 0vh;
+  right: -1vw;
+  z-index: 2;
+}
+
+#arbres {
+  position: absolute;
+  width: 120vw;
+  height: 90vh;
+  right: -5vw;
+  top: 40vh;
+  z-index: 3;
+}
+/*---------------------------------------------------------- 
+# Chapitre 3
+----------------------------------------------------------*/ 
+#chapitre-3 {
+  position: relative;
+    background-image:url("../img/img_arriere_plan/surface_hd.png");
+    z-index: 3;
+}
+
+.sprite2 {
+  position: absolute;
+  top: 10vh;
+  right: 160vh;
+  background-image: url(../img/img_personnages/bird_ss.png);
+  height: 500px;
+  width: 500px;
+  animation: bird 2s infinite steps(48) paused;
+}
+/*---------------------------------------------------------- 
+# Chapitre 4
+----------------------------------------------------------*/ 
+#chapitre-4 {
+    background-image: url("../img/img_arriere_plan/plan-eau-1.png");
+}
+
+#chapitre-4 img {
+  position: absolute;
+  width: 10vw;
+  height: 15vh;
+  z-index: 4;
+  border: 1px solid rgba(218, 0, 0, 0.5);
+}
+/*---------------------------------------------------------- 
+# Chapitre 5
+----------------------------------------------------------*/ 
+#chapitre-5 {
+    background-image: url("../img/img_arriere_plan/plan-eau-2.png");
+}
+/*---------------------------------------------------------- 
+# Chapitre 6
+----------------------------------------------------------*/ 
+#chapitre-6 {
+  position: relative;
+  background-image: url("../img/img_arriere_plan/plan-eau-3.png");
+}
+
+.poisson {
+  position: absolute;
+  z-index: 5;
+}
+
+.seahorse {
+  position: absolute;
+  z-index: 5;
+  visibility: hidden;
+}
+/*---------------------------------------------------------- 
+# Chapitre 7
+----------------------------------------------------------*/ 
+#chapitre-7 {
+  background-image: url("../img/img_arriere_plan/plan-eau-4.png");
+}
+
+.sprite {
+  position: absolute;
+  background-image: url(../img/img_personnages/diver_ss.png);
+  height: 502px;
+  width: 502px;
+  animation: diver 2s infinite steps(48) paused;
+  z-index: 3;
+}
+/*---------------------------------------------------------- 
+# Chapitre 8
+----------------------------------------------------------*/ 
+#chapitre-8 {
+  background-image: url("../img/img_arriere_plan/bottom_sea.png");
+}
+
+/*  Spritesheet  */
+
+.spritesheet, .spritesheet2 {
+    height: 200vh;
+}
+
+@keyframes diver {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 24096px 0;
+    }
+}
+  
+@keyframes bird {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 24000px 0;
+    }
+}
+
+.is-scrolling .sprite {
+    animation-play-state: running;
+}
+  
+.is-scrolling .sprite2 {
+    animation-play-state: running;
+}
+
+/*  Footer  */
+footer p {
+    position: relative;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: rgb(0, 0, 0); /*Attention a ce que ca soit visible*/
+    text-align: center;
+  }
+  
