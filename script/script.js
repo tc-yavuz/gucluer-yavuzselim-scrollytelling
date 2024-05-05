@@ -97,8 +97,14 @@ gsap.to("#tortue", {
   }
 });
 
-gsap.timeline({scrollTrigger:
-  {trigger:'#chapitre-2', start:'top top', end:'bottom bottom', scrub:1}})
-    .to('#mont-gauche', {x:0},{y:-200}, 0)
-    .to('#mont-droit', {x:100},{y:-800}, 0)
-    .to('#arbres', {x:-150},{y:-500}, 0)
+gsap.to("#text p", {
+  backgroundPositionX: "0%",
+  stagger: 1,
+  scrollTrigger: {
+    trigger: "#text",
+    markers: true,
+    scrub: 1,
+    start: "top center",
+    end: "bottom center"
+  }
+}); 

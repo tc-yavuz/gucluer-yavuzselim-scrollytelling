@@ -101,6 +101,15 @@ Header
   top: 10vh;
 }
 
+#text > p {
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 50%,
+    rgb(37, 37, 37) 50%
+  );
+  color: transparent;
+}
+
 /* Defilement */
 
 @keyframes scrollIcon {
@@ -285,7 +294,31 @@ Header
 # Chapitre 5
 ----------------------------------------------------------*/ 
 #chapitre-5 {
-    background-image: url("../img/img_arriere_plan/plan-eau-2.png");
+  background-image: url("../img/img_arriere_plan/plan-eau-2.png");
+}
+
+.bateau {
+  position: relative;
+  top: 25vh;
+  left: 40vw;
+}
+
+.bateau-1 {
+  position: absolute;
+  width: 7vw;
+  left: 15vw;
+  top: 1.4vh;
+}
+.bateau-2 {
+  position: absolute;
+  width: 15vw;
+  top: 20vh;
+  left: 10vw;
+}
+.bateau-3 {
+  position: absolute;
+  width: 25vw;
+  top: 30vh;
 }
 /*---------------------------------------------------------- 
 # Chapitre 6
