@@ -101,15 +101,6 @@ Header
   top: 10vh;
 }
 
-#text > p {
-  background: linear-gradient(
-    to right,
-    rgb(255, 255, 255) 50%,
-    rgb(37, 37, 37) 50%
-  );
-  color: transparent;
-}
-
 /* Defilement */
 
 @keyframes scrollIcon {
@@ -283,12 +274,19 @@ Header
     background-image: url("../img/img_arriere_plan/plan-eau-1.png");
 }
 
-#chapitre-4 img {
-  position: absolute;
-  width: 10vw;
-  height: 15vh;
-  z-index: 4;
-  border: 1px solid rgba(218, 0, 0, 0.5);
+#path {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  outline: dashed 2px red;
+}
+
+#tortue {
+  outline: dashed 2px red;
+  z-index: 99;
+  width: 20vw;
+  height: 20vh;
 }
 /*---------------------------------------------------------- 
 # Chapitre 5

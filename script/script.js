@@ -1,4 +1,7 @@
+gsap.registerPlugin(ScrollTrigger) ;
+
 let minuteur;
+
 
 function handleScroll() {
   document.body.classList.add('is-scrolling');
@@ -12,7 +15,7 @@ function handleScroll() {
   
 window.addEventListener('scroll', handleScroll);
 
-gsap.registerPlugin(ScrollTrigger);
+
 
 /*------------------------------------------------------------------
 Chapitre 1
@@ -57,7 +60,8 @@ const oiseau = gsap.timeline({
   },
 });
 oiseau
-.to(".sprite2", { x: "60vw" },0);
+.to(".sprite2", {
+   x: "60vw" },0);
 
 
 const diver = gsap.timeline({
@@ -66,7 +70,7 @@ const diver = gsap.timeline({
     start: "top top",
     end: "bottom top",
     scrub: true,
-    markers: true,
+    markers: false,
     pin: true,
   },
 });
@@ -79,13 +83,37 @@ diver
 
 gsap.registerPlugin(MorphSVGPlugin);
 
-let anim = gsap.to("#poisson", { 
+gsap.to("#poisson", {
+  scrollTrigger: {
+      trigger: "#chapitre-6",
+      start: "top top",
+      end: "bottom top",
+      pin: true,
+      scrub: true,
+      markers: true,
+  },
+  duration: 5,
   morphSVG: "#seahorse"
 });
 
+gsap.to("#poisson", {
+  scrollTrigger: {
+      trigger: "#chapitre-6",
+      start: "bottom top",
+      end: "top top",
+      pin: true,
+      scrub: true,
+      markers: true,
+  },
+  duration: 5,
+  morphSVG: "#poisson"
+});
+
+gsap.registerPlugin(MotionPathPlugin);
+
 gsap.to("#tortue", {
-  duration: 5, 
-  repeat: 12,
+  duration: 5,
+  repeat: -1,
   repeatDelay: 3,
   yoyo: true,
   ease: "power1.inOut",
