@@ -28,27 +28,6 @@ Chapitre 2
 /*------------------------------------------------------------------
 Chapitre 3
 --------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-Chapitre 4
---------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-Chapitre 5
---------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-Chapitre 6
---------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-Chapitre 7
---------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-Chapitre 8
---------------------------------------------------------------------*/
-
 const oiseau = gsap.timeline({
   scrollTrigger: {
     trigger: "#chapitre-3",
@@ -56,59 +35,15 @@ const oiseau = gsap.timeline({
     end: "bottom top",
     scrub: true,
     pin: true,
-    markers: false,
+    //markers: false,
   },
 });
 oiseau
 .to(".sprite2", {
-   x: "60vw" },0);
-
-
-const diver = gsap.timeline({
-  scrollTrigger: {
-    trigger: "#chapitre-7",
-    start: "top top",
-    end: "bottom top",
-    scrub: true,
-    markers: false,
-    pin: true,
-  },
-});
-diver
-.to(".sprite", {
-  x: "60vw",
-  y: "30vh"
-});
-
-
-gsap.registerPlugin(MorphSVGPlugin);
-
-gsap.to("#poisson", {
-  scrollTrigger: {
-      trigger: "#chapitre-6",
-      start: "top top",
-      end: "bottom top",
-      pin: true,
-      scrub: true,
-      markers: true,
-  },
-  duration: 5,
-  morphSVG: "#seahorse"
-});
-
-gsap.to("#poisson", {
-  scrollTrigger: {
-      trigger: "#chapitre-6",
-      start: "bottom top",
-      end: "top top",
-      pin: true,
-      scrub: true,
-      markers: true,
-  },
-  duration: 5,
-  morphSVG: "#poisson"
-});
-
+   x: "100vw" },0);
+/*------------------------------------------------------------------
+Chapitre 4
+--------------------------------------------------------------------*/
 gsap.registerPlugin(MotionPathPlugin);
 
 gsap.to("#tortue", {
@@ -124,13 +59,54 @@ gsap.to("#tortue", {
     alignOrigin: [0.5, 0.5]
   }
 });
+/*------------------------------------------------------------------
+Chapitre 5
+--------------------------------------------------------------------*/
 
+/*------------------------------------------------------------------
+Chapitre 6
+--------------------------------------------------------------------*/
+gsap.registerPlugin(MorphSVGPlugin);
+
+gsap.to("#poisson", {
+  scrollTrigger: {
+      trigger: "#chapitre-6",
+      start: "top top",
+      end: "bottom top",
+      pin: true,
+      scrub: true,
+      //markers: true,
+  },
+  duration: 5,
+  morphSVG: "#seahorse"
+});
+/*------------------------------------------------------------------
+Chapitre 7
+--------------------------------------------------------------------*/
+const diver = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#chapitre-7",
+    start: "top top",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+    pin: true,
+  },
+});
+diver
+.to(".sprite", {
+  x: "100vw",
+  y: "-50vh"
+},0);
+/*------------------------------------------------------------------
+Chapitre 8
+--------------------------------------------------------------------*/
 gsap.to("#text p", {
   backgroundPositionX: "0%",
   stagger: 1,
   scrollTrigger: {
     trigger: "#text",
-    markers: true,
+    //markers: true,
     scrub: 1,
     start: "top center",
     end: "bottom center"
