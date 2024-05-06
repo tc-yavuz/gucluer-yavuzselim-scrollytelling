@@ -243,10 +243,10 @@ Header
 
 #arbres {
   position: absolute;
-  width: 120vw;
-  height: 90vh;
-  right: -5vw;
-  top: 40vh;
+  width: 110vw;
+  height: 70vh;
+  left: -5vw;
+  bottom: -25vh;
   z-index: 3;
 }
 /*---------------------------------------------------------- 
@@ -284,10 +284,10 @@ Header
 }
 
 #tortue {
-  outline: dashed 2px red;
   z-index: 99;
   width: 20vw;
   height: 20vh;
+  fill: rgb(3, 175, 75);
 }
 /*---------------------------------------------------------- 
 # Chapitre 5
@@ -300,26 +300,23 @@ Header
   position: relative;
   top: 25vh;
   left: 40vw;
-  width: 30vw;
-  aspect-ratio: 1/1;
-  border: 1px solid red;
 }
 
 .bateau-1 {
   position: absolute;
-  width: 7vw;
-  left: 15vw;
+  width: 134px;
+  left: 290px;
   top: 1.4vh;
 }
 .bateau-2 {
   position: absolute;
-  width: 15vw;
+  width: 290px;
   top: 20vh;
-  left: 10vw;
+  left: 190px;
 }
 .bateau-3 {
   position: absolute;
-  width: 25vw;
+  width: 490px;
   top: 30vh;
 }
 /*---------------------------------------------------------- 
@@ -333,7 +330,7 @@ Header
 .poisson {
   position: absolute;
   z-index: 5;
-  fill: #001f3f;
+  fill: #0761b6;
 }
 
 .seahorse {
@@ -363,6 +360,7 @@ Header
   top: 50vh;
   animation: diver 2s infinite steps(48) paused;
   z-index: 3;
+  filter: brightness(1.3) sepia(1) hue-rotate(220deg) saturate(8);
 }
 /*---------------------------------------------------------- 
 # Chapitre 8

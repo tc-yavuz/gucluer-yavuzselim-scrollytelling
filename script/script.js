@@ -24,7 +24,21 @@ Chapitre 1
 /*------------------------------------------------------------------
 Chapitre 2
 --------------------------------------------------------------------*/
+const parallax = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#chapitre-2",
+    start: "top 40%",
+    end: "20% 50%",
+    //markers: true,
+    duration: 5,
+    scrub: 2,
+  },
+});
 
+parallax
+  .to("#mont-droit", { scale: 2.3 }, "<")
+  .to("#mont-gauche", { scale: 2.3 }, "<0.25")
+  .to("#arbres", { scale: 1.8 }, "<0.5")
 /*------------------------------------------------------------------
 Chapitre 3
 --------------------------------------------------------------------*/
@@ -49,8 +63,6 @@ gsap.registerPlugin(MotionPathPlugin);
 gsap.to("#tortue", {
   duration: 5,
   repeat: -1,
-  repeatDelay: 3,
-  yoyo: true,
   ease: "power1.inOut",
   motionPath:{
     path: "#path",
@@ -62,7 +74,19 @@ gsap.to("#tortue", {
 /*------------------------------------------------------------------
 Chapitre 5
 --------------------------------------------------------------------*/
+const bateau = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#chapitre-5",
+    start: "top top",
+    end: "bottom top",
+    scrub: 1,
+    pin: true,
+    markers: true,
+    duration: 8,
+  },
+});
 
+bateau.to(".bateau-1", { y: "-150px" }, 0).to(".bateau-3", { y: "150px" }, 0);
 /*------------------------------------------------------------------
 Chapitre 6
 --------------------------------------------------------------------*/
