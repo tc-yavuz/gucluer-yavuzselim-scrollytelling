@@ -20,7 +20,7 @@ window.addEventListener('scroll', handleScroll);
 /*------------------------------------------------------------------
 Chapitre 1
 --------------------------------------------------------------------*/
-
+gsap.registerPlugin(DrawSVGPlugin);
 /*------------------------------------------------------------------
 Chapitre 2
 --------------------------------------------------------------------*/
@@ -46,8 +46,8 @@ const oiseau = gsap.timeline({
   scrollTrigger: {
     trigger: "#chapitre-3",
     start: "top top",
-    end: "bottom top",
-    scrub: true,
+    end: "bottom -350%",
+    scrub: 1,
     pin: true,
     //markers: false,
   },
@@ -78,8 +78,8 @@ const bateau = gsap.timeline({
   scrollTrigger: {
     trigger: "#chapitre-5",
     start: "top top",
-    end: "bottom top",
-    scrub: 1,
+    end: "bottom -150%",
+    scrub: 5,
     pin: true,
     markers: true,
     duration: 8,
@@ -96,9 +96,9 @@ gsap.to("#poisson", {
   scrollTrigger: {
       trigger: "#chapitre-6",
       start: "top top",
-      end: "bottom top",
+      end: "bottom -150%",
       pin: true,
-      scrub: true,
+      scrub: 3,
       //markers: true,
   },
   duration: 5,
@@ -111,7 +111,8 @@ const diver = gsap.timeline({
   scrollTrigger: {
     trigger: "#chapitre-7",
     start: "top top",
-    end: "bottom top",
+    end: "bottom -500%",
+    duration: 10,
     scrub: true,
     markers: true,
     pin: true,
@@ -119,8 +120,8 @@ const diver = gsap.timeline({
 });
 diver
 .to(".sprite", {
-  x: "100vw",
-  y: "-50vh"
+  x: "102vw",
+  y: "-50vh",
 },0);
 /*------------------------------------------------------------------
 Chapitre 8
