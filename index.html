@@ -37,28 +37,34 @@
       <section id="chapitre-1">
         <ul class="technique-gsap"> 
           <li>Chapitre 1</li> 
-          <li>...</li> 
           <li>scrollTrigger 
               <ul> 
-                  <li>trigger=</li> 
-                  <li>...</li> 
+                  <li>trigger = chapitre-1</li> 
+                  <li>drawSvg</li>
+                  <li>animTexte</li>
               </ul> 
           </li> 
         </ul>
-        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path id="etoile" d="M12 3L14.0357 8.16153C14.2236 8.63799 14.3175 8.87622 14.4614 9.0771C14.5889 9.25516 14.7448 9.41106 14.9229 9.53859C15.1238 9.68245 15.362 9.77641 15.8385 9.96432L21 12L15.8385 14.0357C15.362 14.2236 15.1238 14.3175 14.9229 14.4614C14.7448 14.5889 14.5889 14.7448 14.4614 14.9229C14.3175 15.1238 14.2236 15.362 14.0357 15.8385L12 21L9.96432 15.8385C9.77641 15.362 9.68245 15.1238 9.53859 14.9229C9.41106 14.7448 9.25516 14.5889 9.0771 14.4614C8.87622 14.3175 8.63799 14.2236 8.16153 14.0357L3 12L8.16153 9.96432C8.63799 9.77641 8.87622 9.68245 9.0771 9.53859C9.25516 9.41106 9.41106 9.25516 9.53859 9.0771C9.68245 8.87622 9.77641 8.63799 9.96432 8.16153L12 3Z" stroke="#ffff80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <p id="text">Une petite visite sur la planète Terre.</p>
+        
+        <div id="etoile-path">
+          <svg  width="50vw" height="50vh" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path id="etoile" d="M12 3L14.0357 8.16153C14.2236 8.63799 14.3175 8.87622 14.4614 9.0771C14.5889 9.25516 14.7448 9.41106 14.9229 9.53859C15.1238 9.68245 15.362 9.77641 15.8385 9.96432L21 12L15.8385 14.0357C15.362 14.2236 15.1238 14.3175 14.9229 14.4614C14.7448 14.5889 14.5889 14.7448 14.4614 14.9229C14.3175 15.1238 14.2236 15.362 14.0357 15.8385L12 21L9.96432 15.8385C9.77641 15.362 9.68245 15.1238 9.53859 14.9229C9.41106 14.7448 9.25516 14.5889 9.0771 14.4614C8.87622 14.3175 8.63799 14.2236 8.16153 14.0357L3 12L8.16153 9.96432C8.63799 9.77641 8.87622 9.68245 9.0771 9.53859C9.25516 9.41106 9.41106 9.25516 9.53859 9.0771C9.68245 8.87622 9.77641 8.63799 9.96432 8.16153L12 3Z" stroke="#ffff80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        
+
+        <p id="text-1">Une petite visite sur la planète Terre.</p>
+        <img id="img1" src="./img/img_arriere_plan/galaxy.png" loading="lazy">
       </section>
       <!-- ---------- Chapitre 2 -------- -->
       <section id="chapitre-2">
         <ul class="technique-gsap"> 
           <li>Chapitre 2</li> 
-          <li>...</li> 
           <li>scrollTrigger 
               <ul> 
-                  <li>trigger=</li> 
-                  <li>...</li> 
+                  <li>trigger=chapitre-2</li> 
+                  <li>parallax</li>
+                  <li>animTexte</li> 
               </ul> 
           </li> 
         </ul>
@@ -66,56 +72,61 @@
           <img src="./img/img_arriere_plan/parallax/mont_gauche.png" id="mont-gauche">
           <img src="./img/img_arriere_plan/parallax/srbres.png" id="arbres">
           <img src="./img/img_arriere_plan/parallax/monts_droite.png" id="mont-droit">
+          <img id="img2" src="./img/img_arriere_plan/parallax/fond_montagnes.png" loading="lazy">
         </section>
       
-        <p id="text">Les montagnes immenses entourées de forêts.</p>
+        <p id="text-2">Les montagnes immenses entourées de forêts.</p>
+        
       </section>
       <!-- ---------- Chapitre 3 -------- -->
       <section id="chapitre-3">
         <ul class="technique-gsap"> 
-          <li>Chapitre 3</li> 
-          <li>...</li> 
+          <li>Chapitre 3</li>
           <li>scrollTrigger 
               <ul> 
-                  <li>trigger=</li> 
-                  <li>...</li> 
+                  <li>trigger= chapitre-3</li> 
+                  <li>Spritesheet</li>
+                  <li>animTexte</li>
               </ul> 
           </li> 
         </ul>
-        <div class="spritesheet2">
           <div class="sprite2"></div>
-        </div>
-        <p id="text">On plonge dans l'eau !</p>
+          <img id="img3" src="./img/img_arriere_plan/surface_hd.png" loading="lazy">
+        <p id="text-3">On plonge dans l'eau !</p>
+        
       </section>
       <!-- ---------- Chapitre 4 -------- -->
       <section id="chapitre-4">
         <ul class="technique-gsap"> 
-          <li>Chapitre 4</li> 
-          <li>...</li> 
+          <li>Chapitre 4</li>
           <li>scrollTrigger 
               <ul> 
-                  <li>trigger=</li> 
-                  <li>on ne voit pas la tortue</li> 
+                  <li>trigger=chapitre-4</li> 
+                  <li>motionpath</li> 
+                  <li>AnimationAutomatique</li>
+                  <li>animTexte</li> 
               </ul> 
           </li> 
         </ul>
 
-        <svg viewBox="30 40 500 300" preserveAspectRatio="xMinYMin slice">
-          <path id="path" d="M 0 150 Q 100 0 200 150 Q 300 300 400 150 Q 500 0 600 150" fill="none" stroke="lightgrey"/>
-          <path fill="#000000" id="tortue" d="M -3.7545 38.7609 c 0 -2.0595 -4.2195 -6.7125 -9.4221 -6.7125 c -4.7367 0 -8.3752 0.9648 -10.6406 2.475 c -0.5649 -3.4716 -1.878 -6.6356 -4.0971 -9.1545 c -0.3949 -0.4485 -0.8193 -0.8736 -1.2705 -1.275 c 5.4348 -5.7502 -1.9548 -17.2826 -5.892 -20.55 c -3.5427 -2.9406 -3.9927 8.7592 -2.5125 16.6077 c -1.4631 -0.2756 -3.0393 -0.4219 -4.7295 -0.4219 c -5.9405 0 -11.4324 1.752 -15.6423 4.6735 c -0.7335 -6.4028 -9.6306 -9.2874 -13.5657 -9.1639 c -4.3658 0.1368 2.6577 11.55 7.4063 15.825 c -0.7293 1.323 -1.2746 2.7296 -1.6125 4.2 c -2.1383 0.7233 -4.2591 1.5789 -6.2482 3.4968 c 2.0835 2.0598 4.1655 2.8143 6.2484 3.492 c 0.3379 1.4723 0.8825 2.8804 1.6125 4.205 c -4.7484 4.2747 -11.772 15.6881 -7.4061 15.825 c 3.9351 0.1233 12.8325 -2.7615 13.5657 -9.1642 c 4.2099 2.9215 9.702 4.6734 15.642 4.6734 c 1.6905 0 3.2667 -0.1461 4.7298 -0.4215 c -1.4802 7.8483 -1.0302 19.548 2.5125 16.6075 c 3.9372 -3.2676 11.3268 -14.7999 5.892 -20.55 c 0.4512 -0.4015 0.8756 -0.8265 1.2705 -1.275 c 2.2283 -2.529 3.5406 -5.7087 4.1016 -9.1968 c 2.2965 1.5348 5.9726 2.517 10.6359 2.517 c 5.2025 0 9.4219 -4.6527 9.4219 -6.7125 z m -22.5375 0 c 0 3.033 -0.5136 5.818 -1.5798 8.1845 l -4.7955 -3.9518 v -8.4657 l 4.7955 -3.9515 c 1.0662 2.3662 1.5795 5.151 1.5795 8.1843 z m -3.0048 -10.6406 l -4.6875 3.8625 l -6.6048 -4.4955 l -0.942 -0.642 l -0.8205 0.7965 l -5.6438 5.4798 l -4.2654 -3.4968 l -0.9657 -0.792 l -0.9 0.867 l -4.2 4.0687 l 1.95 2.0157 l 3.3045 -3.2016 l 3.933 3.2295 v 5.8969 l -3.933 3.2295 l -3.3045 -3.2015 l -1.95 2.0157 l 4.2 4.0687 l 0.9 0.867 l 0.9657 -0.792 L -47.9955 44.4 l 5.6439 5.4844 l 0.8157 0.7875 l 0.942 -0.633 l 6.6564 -4.4577 l 4.6407 3.825 c -0.2259 0.309 -0.465 0.609 -0.7173 0.8955 c -2.5248 2.8659 -6.4143 4.6875 -12.3045 4.6875 c -11.7807 0 -21.0095 -7.455 -21.0095 -16.2285 c 0 -8.7729 9.2287 -16.2279 21.0093 -16.2279 c 5.8905 0 9.78 1.821 12.3045 4.6875 c 0.2532 0.2869 0.4909 0.5895 0.7173 0.9 z m -6.1736 6.2389 v 8.8734 l -5.7375 3.8483 l -5.1279 -4.9782 v -6.6843 L -41.217 30.45 l 5.7465 3.9095 z"/>
-        </svg>
+          <svg id="path-tortue" viewBox="30 40 500 300" preserveAspectRatio="xMinYMin slice">
+            <path id="path" d="M 0 150 Q 100 0 200 150 Q 300 300 400 150 Q 500 0 600 150" fill="none" stroke="lightgrey"/>
+            <path fill="#000000" id="tortue" d="M -3.7545 38.7609 c 0 -2.0595 -4.2195 -6.7125 -9.4221 -6.7125 c -4.7367 0 -8.3752 0.9648 -10.6406 2.475 c -0.5649 -3.4716 -1.878 -6.6356 -4.0971 -9.1545 c -0.3949 -0.4485 -0.8193 -0.8736 -1.2705 -1.275 c 5.4348 -5.7502 -1.9548 -17.2826 -5.892 -20.55 c -3.5427 -2.9406 -3.9927 8.7592 -2.5125 16.6077 c -1.4631 -0.2756 -3.0393 -0.4219 -4.7295 -0.4219 c -5.9405 0 -11.4324 1.752 -15.6423 4.6735 c -0.7335 -6.4028 -9.6306 -9.2874 -13.5657 -9.1639 c -4.3658 0.1368 2.6577 11.55 7.4063 15.825 c -0.7293 1.323 -1.2746 2.7296 -1.6125 4.2 c -2.1383 0.7233 -4.2591 1.5789 -6.2482 3.4968 c 2.0835 2.0598 4.1655 2.8143 6.2484 3.492 c 0.3379 1.4723 0.8825 2.8804 1.6125 4.205 c -4.7484 4.2747 -11.772 15.6881 -7.4061 15.825 c 3.9351 0.1233 12.8325 -2.7615 13.5657 -9.1642 c 4.2099 2.9215 9.702 4.6734 15.642 4.6734 c 1.6905 0 3.2667 -0.1461 4.7298 -0.4215 c -1.4802 7.8483 -1.0302 19.548 2.5125 16.6075 c 3.9372 -3.2676 11.3268 -14.7999 5.892 -20.55 c 0.4512 -0.4015 0.8756 -0.8265 1.2705 -1.275 c 2.2283 -2.529 3.5406 -5.7087 4.1016 -9.1968 c 2.2965 1.5348 5.9726 2.517 10.6359 2.517 c 5.2025 0 9.4219 -4.6527 9.4219 -6.7125 z m -22.5375 0 c 0 3.033 -0.5136 5.818 -1.5798 8.1845 l -4.7955 -3.9518 v -8.4657 l 4.7955 -3.9515 c 1.0662 2.3662 1.5795 5.151 1.5795 8.1843 z m -3.0048 -10.6406 l -4.6875 3.8625 l -6.6048 -4.4955 l -0.942 -0.642 l -0.8205 0.7965 l -5.6438 5.4798 l -4.2654 -3.4968 l -0.9657 -0.792 l -0.9 0.867 l -4.2 4.0687 l 1.95 2.0157 l 3.3045 -3.2016 l 3.933 3.2295 v 5.8969 l -3.933 3.2295 l -3.3045 -3.2015 l -1.95 2.0157 l 4.2 4.0687 l 0.9 0.867 l 0.9657 -0.792 L -47.9955 44.4 l 5.6439 5.4844 l 0.8157 0.7875 l 0.942 -0.633 l 6.6564 -4.4577 l 4.6407 3.825 c -0.2259 0.309 -0.465 0.609 -0.7173 0.8955 c -2.5248 2.8659 -6.4143 4.6875 -12.3045 4.6875 c -11.7807 0 -21.0095 -7.455 -21.0095 -16.2285 c 0 -8.7729 9.2287 -16.2279 21.0093 -16.2279 c 5.8905 0 9.78 1.821 12.3045 4.6875 c 0.2532 0.2869 0.4909 0.5895 0.7173 0.9 z m -6.1736 6.2389 v 8.8734 l -5.7375 3.8483 l -5.1279 -4.9782 v -6.6843 L -41.217 30.45 l 5.7465 3.9095 z"/>
+          </svg>
+        
 
-        <p id="text">Des êtres vivants sous l'eau ?</p>
+        <p id="text-4">Des êtres vivants sous l'eau ?</p>
+        <img id="img4" src="./img/img_arriere_plan/plan-eau-1.png" loading="lazy">
       </section>
       <!-- ---------- Chapitre 5 -------- -->
       <section id="chapitre-5">
         <ul class="technique-gsap"> 
-          <li>Chapitre 5</li> 
-          <li>...</li> 
+          <li>Chapitre 5</li>
           <li>scrollTrigger 
               <ul> 
-                  <li>trigger=</li> 
-                  <li>...</li> 
+                  <li>trigger=chapitre-5</li> 
+                  <li>decompose</li>
+                  <li>animTexte</li>
               </ul> 
           </li> 
         </ul>
@@ -126,17 +137,18 @@
           <img src="./img/img_elements_visuels/bateau-3.png" class="bateau-3">
         </div>
 
-        <p id="text">Des grottes sous l'eau ! Incroyable !</p>
+        <p id="text-5">Des grottes sous l'eau ! Incroyable !</p>
+        <img id="img5" src="./img/img_arriere_plan/plan-eau-2.png" loading="lazy">
       </section>
       <!-- ---------- Chapitre 6 -------- -->
       <section id="chapitre-6">
         <ul class="technique-gsap"> 
           <li>Chapitre 6</li> 
-          <li>...</li> 
           <li>scrollTrigger 
               <ul> 
-                  <li>trigger=</li> 
-                  <li>...</li> 
+                  <li>trigger=chapitre-6</li> 
+                  <li>morph</li> 
+                  <li>animTexte</li>
               </ul> 
           </li> 
         </ul>
@@ -149,7 +161,8 @@
       </div>
       
 
-        <p id="text">Un courant dans l'eau ? Wow !</p>
+        <p id="text-6">Un courant dans l'eau ? Wow !</p>
+        <img id="img6" src="./img/img_arriere_plan/plan-eau-3.png" loading="lazy">
       </section>
       <!-- ---------- Chapitre 7 -------- -->
       <section id="chapitre-7">
@@ -158,29 +171,62 @@
           <li>...</li> 
           <li>scrollTrigger 
               <ul> 
-                  <li>trigger=</li> 
-                  <li>...</li> 
+                  <li>trigger=chapitre-7</li> 
+                  <li>spritesheet</li>
+                  <li>animTexte</li> 
               </ul> 
           </li> 
         </ul>
       <div class="spritesheet">
         <div class="sprite"></div>
       </div>
-        <p id="text">Il n'a pas l'air d'être d'ici.</p>
+        <p id="text-7">Il n'a pas l'air d'être d'ici.</p>
+        <img id="img7" src="img/img_arriere_plan/plan-eau-4.png" loading="lazy">
       </section>
       <!-- ---------- Chapitre 8 -------- -->
       <section id="chapitre-8">
         <ul class="technique-gsap"> 
           <li>Chapitre 8</li> 
-          <li>...</li> 
           <li>scrollTrigger 
               <ul> 
-                  <li>trigger=</li> 
-                  <li>...</li> 
+                  <li>trigger=chapitre-8</li> 
+                  <li>drawSVG</li> 
+                  <li>animTexte</li>
               </ul> 
           </li> 
         </ul>
-        <p id="text">Enfin! Le fond de l'océan !</p>
+
+        <div class="star-path">
+          <svg fill="none" height="80vh" width="80vw" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+          viewBox="0 0 422.629 422.629" xml:space="preserve">
+          <path id="star" d="M389.776,224.563c4.607-5.707,6.006-13.279,3.741-20.253c-2.266-6.978-7.848-12.285-14.934-14.198l-92.833-25.054
+            c-1.57-0.42-2.927-1.406-3.817-2.771l-3.743-5.743c9.151,2.218,18.211,4.887,27.135,8.031c0.821,0.29,1.662,0.428,2.491,0.428
+            c2.795,0,5.451-1.571,6.74-4.209l21.496-44c1.135-2.324,0.992-5.07-0.378-7.264S331.9,106,329.313,106h-18.5
+            c-15.99,0-29-13.009-29-29v-6.503C281.813,31.625,250.189,0,211.317,0S140.82,31.625,140.82,70.497V77c0,15.99-13.01,29-29,29
+            h-18.5c-2.587,0-4.991,1.333-6.361,3.528s-1.513,4.94-0.377,7.265l21.497,44c1.672,3.421,5.642,5.048,9.23,3.781
+            c8.923-3.144,17.981-5.812,27.131-8.03l-3.739,5.737c-0.896,1.37-2.251,2.356-3.825,2.78l-92.831,25.05
+            c-7.084,1.913-12.666,7.221-14.932,14.198c-2.265,6.975-0.866,14.546,3.74,20.252l60.381,74.831
+            c1.019,1.262,1.535,2.861,1.456,4.49l-4.86,96.026c-0.374,7.321,2.944,14.267,8.878,18.58c3.761,2.733,8.203,4.142,12.696,4.141
+            c2.601,0,5.219-0.472,7.73-1.431l89.826-34.292c1.521-0.581,3.192-0.581,4.715,0.002l89.828,34.29
+            c6.849,2.615,14.479,1.606,20.413-2.702c5.936-4.31,9.261-11.255,8.894-18.583l-4.86-96.039c-0.084-1.623,0.433-3.214,1.457-4.483
+            L389.776,224.563z M269.369,170.48c2.916,4.468,7.355,7.688,12.486,9.062l92.818,25.05c3.13,0.845,4.243,3.323,4.576,4.349
+            c0.333,1.025,0.887,3.68-1.147,6.201l-55.287,68.529l-34.28-32.268c3.982-6.468,6.284-14.075,6.284-22.212
+            c0-23.435-19.065-42.5-42.5-42.5c-9.057,0-17.454,2.857-24.357,7.703l-46.97-44.216c25.469-2.728,51.252-2.002,76.555,2.167
+            L269.369,170.48z M252.32,201.691c15.163,0,27.5,12.336,27.5,27.5s-12.337,27.5-27.5,27.5c-15.163,0-27.5-12.336-27.5-27.5
+            S237.157,201.691,252.32,201.691z M105.331,121h6.488c24.262,0,44-19.738,44-44v-6.503C155.82,39.896,180.715,15,211.317,15
+            c30.601,0,55.496,24.896,55.496,55.497V77c0,24.261,19.738,44,44,44h6.488l-13.325,27.275
+            c-30.007-9.812-61.333-14.718-92.659-14.718c-31.327,0-62.652,4.906-92.659,14.718L105.331,121z M315.104,406.358
+            c-0.873,0.634-3.228,1.98-6.249,0.827l-89.824-34.288c-4.975-1.904-10.457-1.905-15.426-0.002l-89.822,34.291
+            c-3.026,1.158-5.383-0.196-6.256-0.831c-0.872-0.634-2.882-2.456-2.717-5.684l4.861-96.042c0.261-5.322-1.432-10.528-4.765-14.657
+            l-60.381-74.831c-2.033-2.519-1.479-5.175-1.146-6.199c0.333-1.026,1.446-3.504,4.574-4.349l92.821-25.048
+            c5.136-1.379,9.569-4.598,12.488-9.067l10.423-15.99l53.695,50.547c-4.761,6.865-7.561,15.188-7.561,24.157
+            c0,23.435,19.065,42.5,42.5,42.5c9.891,0,18.995-3.406,26.225-9.093l35.699,33.604c-0.97,2.681-1.425,5.542-1.274,8.438
+            l4.86,96.026C317.991,403.9,315.977,405.724,315.104,406.358z"/>
+        </svg>
+        </div>
+        
+        <p id="text-8">Enfin! Le fond de l'océan !</p>
+        <img id="img8" src="./img/img_arriere_plan/bottom_sea.png" loading="lazy">
       </section>
     </main>
     <footer>
@@ -195,8 +241,10 @@
         <p>Sources Images: Adobe Illustrator AI et AI Beta</p>
     </footer>
   <!-- ---------- GSAP -------- -->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/TextPlugin3.min.js" defer></script>
+  <!-- ---------- payant 
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js" defer></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js" defer></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js" defer></script> -------- -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
