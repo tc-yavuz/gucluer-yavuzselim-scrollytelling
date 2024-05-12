@@ -29,8 +29,8 @@ const text1 = gsap.timeline({
 });
 
 text1.to("#text-1", { color: "white" });
-/*
-gsap.registerPlugin(DrawSVGPlugin);
+
+/*gsap.registerPlugin(DrawSVGPlugin);
 
 const etoile = gsap.timeline({
   scrollTrigger: {
@@ -179,8 +179,8 @@ const text6 = gsap.timeline({
 });
 
 text6.to("#text-6", { color: "white" });
-/*
-gsap.registerPlugin(MorphSVGPlugin);
+
+/*gsap.registerPlugin(MorphSVGPlugin);
 
 gsap.to("#poisson", {
   scrollTrigger: {
@@ -237,8 +237,8 @@ const text8 = gsap.timeline({
 });
 
 text8.to("#text-8", { color: "white" });
-/*
-const star = gsap.timeline({
+
+/*const star = gsap.timeline({
   scrollTrigger: {
     duration: 10,
     trigger: "#chapitre-8",
