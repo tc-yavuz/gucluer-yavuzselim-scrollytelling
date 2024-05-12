@@ -43,7 +43,7 @@ const etoile = gsap.timeline({
   }
 });
 
-etoile.fromTo("#etoile", { drawSVG: 0 }, { drawSVG: "100%" }); */
+etoile.fromTo("#etoile", { drawSVG: 0 }, { drawSVG: "100%" });*/
 
 const ctaFade = gsap.timeline({
   scrollTrigger: {
@@ -75,7 +75,7 @@ const parallax = gsap.timeline({
     trigger: "#chapitre-2",
     start: "top 25%",
     end: "20% 50%",
-    //markers: true,
+    markers: false,
     duration: 5,
     scrub: 2,
   },
@@ -106,7 +106,7 @@ const oiseau = gsap.timeline({
     end: "bottom -350%",
     scrub: 1,
     pin: true,
-    //markers: false,
+    markers: false,
   },
 });
 oiseau
@@ -160,7 +160,7 @@ const bateau = gsap.timeline({
     end: "bottom -150%",
     scrub: 5,
     pin: true,
-    //markers: true,
+    markers: false,
     duration: 8,
   },
 });
@@ -189,7 +189,7 @@ gsap.to("#poisson", {
       end: "bottom -150%",
       pin: true,
       scrub: 3,
-      //markers: true,
+      markers: false,
   },
   duration: 5,
   morphSVG: "#seahorse"
@@ -215,7 +215,7 @@ const diver = gsap.timeline({
     end: "bottom -500%",
     duration: 10,
     scrub: true,
-    //markers: true,
+    markers: false,
     pin: true,
   },
 });
@@ -251,4 +251,4 @@ text8.to("#text-8", { color: "white" });
 
 star.fromTo(
   "#star", { drawSVG: "0%", stroke: "white" }, { drawSVG: "100%", stroke: "yellow" }
-); */
+);*/
