@@ -228,6 +228,12 @@ Header
   position: absolute;
   top: 20vh;
 }
+
+#etoile-auto {
+  position: absolute;
+  left: 75vw;
+  top: 60vh;
+}
 /*---------------------------------------------------------- 
 # Chapitre 2
 ----------------------------------------------------------*/ 

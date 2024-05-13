@@ -30,6 +30,14 @@ const text1 = gsap.timeline({
 
 text1.to("#text-1", { color: "white" });
 
+gsap.to("#etoile-auto", {
+  y: 100,
+  duration: 1,
+  ease: "power1.inOut",
+  yoyo: true,
+  repeat: -1,
+});
+
 /*gsap.registerPlugin(DrawSVGPlugin);
 
 const etoile = gsap.timeline({
@@ -132,11 +140,17 @@ gsap.to("#tortue", {
   duration: 9,
   repeat: -1,
   ease: "power1.inOut",
+  scrollTrigger: {
+    trigger: "#chapitre-4",
+    start: "top bottom",
+    end: "bottom top",
+    toggleActions: "play reverse complete restart",
+  },
   motionPath:{
     path: "#path",
     align: "#path",
     autoRotate: true,
-    alignOrigin: [0.5, 0.5]
+    alignOrigin: [0.5, 0.5],
   }
 });
 /*------------------------------------------------------------------
