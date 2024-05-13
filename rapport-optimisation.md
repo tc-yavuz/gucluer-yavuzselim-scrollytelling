@@ -32,4 +32,4 @@ Je n'avais pas mis de loading=lazy sur tous mes images.
 La page se charge plus rapidement.
 
 ## Rapport projet ScrollyTelling après optimisation
-[Page Speed Insights - Rapport du 13 mai 2024, 13:57:59](https://pagespeed.web.dev/analysis/https-yavuz-selim-tim-momo-com/06jp01wl6h?form_factor=desktop)
+[Page Speed Insights - Rapport du 13 mai 2024, 14:12:57](https://pagespeed.web.dev/analysis/https-yavuz-selim-tim-momo-com/sqvcb14hlv?form_factor=desktop)
