@@ -38,7 +38,7 @@ gsap.to("#etoile-auto", {
   repeat: -1,
 });
 
-/*gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(DrawSVGPlugin);
 
 const etoile = gsap.timeline({
   scrollTrigger: {
@@ -51,7 +51,7 @@ const etoile = gsap.timeline({
   }
 });
 
-etoile.fromTo("#etoile", { drawSVG: 0 }, { drawSVG: "100%" });*/
+etoile.fromTo("#etoile", { drawSVG: 0 }, { drawSVG: "100%" });
 
 const ctaFade = gsap.timeline({
   scrollTrigger: {
@@ -194,7 +194,7 @@ const text6 = gsap.timeline({
 
 text6.to("#text-6", { color: "white" });
 
-/*gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
 
 gsap.to("#poisson", {
   scrollTrigger: {
@@ -207,7 +207,7 @@ gsap.to("#poisson", {
   },
   duration: 5,
   morphSVG: "#seahorse"
-}); */
+}); 
 /*------------------------------------------------------------------
 Chapitre 7
 --------------------------------------------------------------------*/
@@ -252,7 +252,7 @@ const text8 = gsap.timeline({
 
 text8.to("#text-8", { color: "white" });
 
-/*const star = gsap.timeline({
+const star = gsap.timeline({
   scrollTrigger: {
     duration: 10,
     trigger: "#chapitre-8",
@@ -265,4 +265,4 @@ text8.to("#text-8", { color: "white" });
 
 star.fromTo(
   "#star", { drawSVG: "0%", stroke: "white" }, { drawSVG: "100%", stroke: "yellow" }
-);*/
+);
